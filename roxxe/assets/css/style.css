@@ -1,0 +1,355 @@
+body {
+  font-family: Prompt, sans-serif;
+}
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+h2 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+h5 {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+h6 {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+p {
+  color: #b1b3b7;
+}
+/* navbar */
+/* .nav-link:hover{
+  color: #2a6ec1;
+  border-bottom: #296dc1;
+  text-decoration: underline #296dc1 ;
+} */
+.nav-link:before,
+.nav-link:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #296dc1;
+    
+    transition: 0.5s;
+}
+
+
+.nav-link:after {
+    right: 0;
+}
+
+.nav-link:before {
+    right: 0;
+    bottom: -6px;
+}
+
+.nav-link:hover {
+  color: #296dc1;
+}
+
+.nav-link:hover:before {
+    width: 100%;
+}
+.nav-item {
+  border-left: 1px solid gray;
+}
+.badge1 {
+  position:relative;
+}
+.badge1[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:.7em;
+  background-color: #ffcb2e;
+  color:white;
+  width:28px;height:18px;
+  text-align:center;
+  line-height:18px;
+  border-radius:20%;
+  box-shadow:0 0 1px #333;
+}
+.badge2 {
+  position:relative;
+}
+.badge2[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:.7em;
+  background-color: #70c23e;
+  color:white;
+  width:28px;height:18px;
+  text-align:center;
+  line-height:18px;
+  border-radius:20%;
+  box-shadow:0 0 1px #333;
+}
+/* header */
+.title-header {
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  
+}
+.text-header {
+  position: absolute;
+  font-size: 2rem;
+  top: 57%;
+  left: 18%;
+  
+}
+.btn-header {
+  position: absolute;
+  top: 70%;
+  left: 18%;
+}
+.button-header {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  background-color: #fafafa;
+  border: none;
+  color: #296dc1;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+}
+.img-fluid {
+  height: 75vh;
+  width: 100vw;
+}
+/* discount-item */
+.discount {
+  background-color: #dfe9f5;
+  transition: .2s;
+}
+.discount-item:hover{
+  transform: scale(1.2); 
+}
+.discount:hover{
+  transform: scale(1.2); 
+}
+.discount-text {
+  position: absolute;
+  margin-top: -16rem;
+  margin-left: 40px;
+  line-height: 2px;
+}
+.discount-text span {
+  color: black;
+  font-size: 15px;
+  line-height: 2cm;
+}
+.discount-item {
+  background-color: #296dc1;
+}
+/* card */
+.item-box {
+  border: 1px solid gray;
+}
+.item-box:hover {
+  background-color: #2a6ec1;
+text-decoration: underline;
+color: #fff;
+
+}
+/* .card-text {
+  position: absolute;
+  margin-top:  -20%;
+  line-height: 2px;
+  color: #f9f9f9;
+  align-items: center;
+left: 70%;
+  
+} */
+/* .card-text{
+position: absolute;
+ margin-top:  -100%;
+  text-align: center;
+  left: 40%;
+} */
+
+.item-text p{
+  text-align: center;
+
+  padding-top: 10%;
+  color: black;
+}
+
+/* best seller */
+.best-text {
+  margin-top:  -100%;
+  text-align: center;
+}
+
+
+
+.banner-wrapper img {
+  background-color: #e7e9ee;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 7px 10px;
+  border-radius: 8px;
+  margin: 15px 0px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+.service-box img {
+  border: 1px solid #e7e9ee;
+  background-clip: border-box;
+}
+.service-box:hover {
+  background-color: #ffff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+  transition: 0.2s;
+}
+.service-box h3 a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.service-box:hover h3 a {
+  color: #296dc1;
+}
+.service-box p {
+  color: #296dc1;
+  font-weight: 800;
+}
+.service-box p span {
+  color: #88bbeb;
+  text-decoration: line-through;
+  font-weight: 200;
+  margin-left: 5px;
+}
+.service-box i {
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #989898;
+}
+
+.service-box :before {
+  margin: 0 auto;
+  display: block;
+  float: none;
+}
+/* 2banner */
+.banner-text  {
+  position: absolute;
+  margin-top: -13rem;
+  margin-left: 40px;
+  line-height: 2px;
+}
+.banner-text span {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 2cm;
+}
+/* card */
+
+.card-item:hover{
+ border: 1px solid lightgray;
+}
+.card-body span{
+  color: #2a6ec1;
+}
+.card-body a {
+  color: black;
+  text-decoration: none;
+}
+.card-body a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+/* footer */
+footer {
+  background-color: #dfe9f5;
+}
+
+/* collection page */
+.collection-item{
+  background: #fff;
+padding: 15px; 
+border: 1px solid lightgray;
+box-shadow: 5px 8px 12px #8d959e1c;
+}
+.bg1 {
+  background-image: linear-gradient(0deg,#84abdb 0%,rgba(31,31,31,0) 100%), url(/assets/img/iomega_ego_1_tb_usb_2-0_desktop_external_hard_drive_1_268x268_crop_top.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+  .bg {
+    background-image: linear-gradient(0deg,#84abdb 0%,rgba(31,31,31,0) 100%), url(/assets/img/apple_g5_powermac_2ghz_desktop_computer_1_268x268_crop_top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  .bg3 {
+    background-image: linear-gradient(0deg,#84abdb 0%,rgba(31,31,31,0) 100%), url(/assets/img/apple_time_capsule_-_1_tb_1_268x268_crop_top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  .bg4 {
+    background-image: linear-gradient(0deg,#84abdb 0%,rgba(31,31,31,0) 100%), url(/assets/img/img_04_268x268_crop_top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  .bg5 {
+    background-image: linear-gradient(0deg,#84abdb 0%,rgba(31,31,31,0) 100%), url(/assets/img/g-o-o-d_geforce_gtx_580_1_268x268_crop_top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  .bg6 {
+    background-image: linear-gradient(0deg,#84abdb 0%,rgba(31,31,31,0) 100%), url(/assets/img/be_quiet__intros_dark_rock_pro_cpu_cooler_1_268x268_crop_top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  .text-gallery {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 250px;
+    text-decoration: none;
+   
+  }
+  
+  .text-gallery h5 {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+/* blog page */
